@@ -8,6 +8,7 @@ const FormUsers: React.FC<FormUsersProps> = ({createUser,infoUpdate,updateUser,s
    
     useEffect(()=>{
       reset(infoUpdate? infoUpdate : undefined)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[infoUpdate])
 
     const submit: SubmitHandler<InfoApi> = (data: InfoApi)=>{
